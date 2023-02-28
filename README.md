@@ -14,6 +14,17 @@ The developed models are applied to forecast the electricity demand during the F
 
 The data used in this project is publicly available and can be found in the data directory. 
 
+![data](https://user-images.githubusercontent.com/78951592/221935428-efa812bb-55ca-4f6e-8fcf-2d0729425664.png)
+
+* `Température` : temperature in Celcius
+* `Temp95` and `Temp99` : exponentially smoothed temperatures of factors .95 and .99
+* `TempMin99` and `TempMax99` : minimal and maximal value of `Temp99` at the current day
+* `Consommation` : electricity consumption in MW
+* `Consommation1` and `Consommation7` : consumptions of the day before and the week before
+* `TimeOfYear` : time of year (0 = 1st of January at 00:00, 1 = 31st of December at 23:30)
+* `DayType` : categorical variable indicating the type of the day (0 = Monday, 6 = Sunday)
+* `DLS` : binary variable indicating whether it is summertime or not
+
 ## References
 
 * D. Obst, J. de Vilmarest and Y. Goude, "Adaptive Methods for Short-Term Electricity Load Forecasting During COVID-19 Lockdown in France," in IEEE Transactions on Power Systems, vol. 36, no. 5, pp. 4754-4763, Sept. 2021, doi: 10.1109/TPWRS.2021.3067551.
