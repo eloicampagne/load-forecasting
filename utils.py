@@ -1,9 +1,6 @@
 import numpy as np
-import pandas as pd
 from tqdm import tqdm
 import torch
-import torch.optim as optim
-
 
 class Transfer():
     def __init__(self, betas, betas_it, basis, basis_it, y, y_it, K=75):
@@ -117,3 +114,6 @@ class Transfer():
         delta_t = beta_t_it - self.betas_it_vec
         beta_t = self.betas_vec + self.rho*delta_t
         return beta_t.T@self.basis
+
+def mape(y_true, y_pred):
+        return np.mean(np.abs((y_true - y_pred) / y_true)) * 100
