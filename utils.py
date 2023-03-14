@@ -179,9 +179,9 @@ class Transfer():
         delta_t = beta_src_t - beta_0_src
 
         if country_dest == 'fr':
-            beta_dst_t[self.it_to_fr] += self.rho*delta_t[self.it_to_fr]
+            beta_dst_t[self.it_to_fr] += self.rho*delta_t[self.fr_to_it]
         else:
-            beta_dst_t[self.fr_to_it] += self.rho*delta_t[self.fr_to_it]
+            beta_dst_t[self.fr_to_it] += self.rho*delta_t[self.it_to_fr]
 
         return beta_dst_t
 
