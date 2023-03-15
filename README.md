@@ -70,15 +70,16 @@ git clone https://github.com/Exion35/load-forecasting.git
 
 Numerical Performance In MAPE (%) and RMSE (MW).
 
-| Method                       | Test 1               | Test 2                |
-|:----------------------------:|:--------------------:|:---------------------:|
-| GAM                          |5.40%, 3076 MW        |3.77%, 2030 MW         |
-| GBM                          |6.34%, 3483 MW        |5.04%, 2607 MW         |
-| Fine-tuned                   |3.96%, 2417 MW        |3.78%, 2024 MW         |
-| GAM $\delta$                 |20.68%, 10833 MW (!)  |5.06%, 2706 MW         |
-| GAM $\delta$ - Fine-tuned    |-                     |-                      |   
-| GAM Saturday                 |4.02%, 2520 MW        |5.78%, 3227 MW         |
-| Aggregation with GAM Saturday|**2.80%**, **1661 MW**|**3.15%**, **1762 MW** |
+| Method                          | Test 1               | Test 2                |
+|:-------------------------------:|:--------------------:|:---------------------:|
+| GAM                             |5.40%, 3076 MW        |3.77%, 2030 MW         |
+| GBM                             |6.34%, 3483 MW        |5.04%, 2607 MW         |
+| Fine-tuned                      |3.96%, 2417 MW        |3.78%, 2024 MW         |
+| GAM $\delta$                    |10.96%, 6063 MW (!)   |4.40%, 2313 MW         |
+| GAM $\delta$ - Fine-tuned       |-                     |-                      |   
+| GAM Saturday                    |4.02%, 2520 MW        |5.78%, 3227 MW         |
+| Aggregation without GAM Saturday|2.67%, 1625 MW        |3.35%, 1891 MW         |
+| Aggregation with GAM Saturday   |**2.64%**, **1553 MW**|**3.06%**, **1727 MW** |
 
 
 ## References
