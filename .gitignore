@@ -1,5 +1,6 @@
 experts/
 processed/
+raw/
 *.html
 *.txt
 __pycache__/
